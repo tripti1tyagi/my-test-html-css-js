@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="raise.css" />
+</head>
+<body>
+    <div class="container">
+        <img id="imageButton" src="images/image_2.png" />
+
+        <div class="nav-bar">
+            <div class="nav-item">Digital Services</div>
+            <div class="nav-item" id="raise" onclick="showAlert()">Raise an Issue</div>
+            <div class="nav-item">About</div>
+        </div>
+        
+        <div class="divider"></div>
+        <div class="small-divider"></div>
+
+        <div class="header">Raise an Issue</div>
+        
+        <div class="form-group">
+            <div class="form-field">
+                <label>Name</label>
+                <input type="text" placeholder="Write your name here" />
+            </div>
+            <div class="form-field">
+                <label>Domains</label>
+                <select class="dropdown-select">
+                    <option class="domNam" value="selurDom">Select your Domain</option>
+                    <option class="tba" value="tire-building-area-1">Tire building area 1</option>
+                    <option class="tba" value="tire-building-area-2">Tire building area 2</option>
+                    <option class="tba" value="tire-building-area-3">Tire building area 3</option>
+                    <option class="tba" value="tire-building-area-4">Tire building area 4</option>
+                    <option class="tba" value="tire-building-area-5">Tire building area 5</option>
+                    <option class="tba" value="tire-building-area-6">Tire building area 6</option>
+                    <option class="tba" value="tire-building-area-7">Tire building area 7</option>
+                </select>
+            </div>
+            <div class="form-field">
+                <label>Issued under the name</label>
+                <select class="dropdown-select">
+                    <option class="domNam" value="selName">Select name of the person</option>
+                    <option value="issueName">Mr. Vaibhav Tyagi</option>
+                    <option value="issueName">Ms. Akanksha Yadav</option>
+                    <option value="issueName">Mr. Prakhar Pathak</option>
+                    <option value="issueName">Mr. Arvind Verma</option>
+                    <option value="issueName">Mr. Harsh Dubey</option>
+                    <option value="issueName">Mr. Pawan Kumar</option>
+                    <option value="issueName">Mr. Technician</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="file-attachment">
+            <div>File Attachment</div>
+            <div class="file-drop-area">
+                <div class="upload-icon">
+                    <div class="upload-inner"></div>
+                </div>
+                <div>
+                    <span style="color: #787878;">Drag and Drop file here or</span>
+                    <span class="underline">Choose File</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="complaint-section">
+            <div>Write your Complaint</div>
+            <textarea class="complaint-textarea" placeholder="Make sure to keep your paragraph for at least 100 words" rows="5" cols="40"></textarea>
+        </div>
+        
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var imageButton = document.getElementById('imageButton');
+            imageButton.addEventListener('click', function() {
+                window.location.href = 'index.html';
+            });
+        });
+    </script>
+    <script>
+        function showAlert() {
+            alert('You are already on the "Raise an issue" page');
+        }
+    </script>
+</body>
+</html>
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<RAI.CSS>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+/* Container */
+.container {
+    width: 1512px;
+    height: 982px;
+    top: 0;
+    left:0px;
+    position: absolute;
+    background: white;
+}
+
+/* Image Button */
+#imageButton {
+    width: 220px;
+    height: 150px;
+    left: 75px;
+    top: 0;
+    position: absolute;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    left: 972px;
+    top: 56px;
+    position: absolute;
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+/* Navigation Items */
+.nav-item {
+    color: black;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 400;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+.raise{
+    color: black;
+    font-size: 20px;
+    font-family: Montserrat;
+    font-weight: 400;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+/* Dividers */
+.divider {
+    width: 1223px;
+    height: 2px;
+    left: 289px;
+    top: 100px;
+    position: absolute;
+    background: #FFA500;
+}
+
+.small-divider {
+    width: 80px;
+    height: 2px;
+    left: 0px;
+    top: 98px;
+    position: absolute;
+    background: #FFA500;
+}
+
+/* Header */
+.header {
+    left: 80px;
+    top: 200px;
+    position: absolute;
+    color: black;
+    font-size: 40px;
+    font-family: Montserrat;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/* Form Group */
+.form-group {
+    left: 80px;
+    top: 289px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+/* Form Field */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Form Field Label fs 14px*/
+.form-field label {
+    color: black;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+/* Form Field Input */
+.form-field input {
+    width: 571px;
+    padding: 12px;
+    background: white;
+    border-radius: 12px;
+    border: 1px rgba(0, 0, 0, 0.30) solid;
+}
+
+/* Dropdown */
+.dropdown {
+    width: 571px;
+    padding: 12px;
+    background: white;
+    border-radius: 12px;
+    border: 1px rgba(0, 0, 0, 0.30) solid;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Dropdown Text */
+.dropdown div {
+    color: #787878;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+}
+
+/* File Attachment h291*/
+.file-attachment {
+    height: 291px;
+    left: 715px;
+    top: 289px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* File Drop Area w717 */
+.file-drop-area {
+    width: 301px;
+    padding: 90px 223px;
+    border-radius: 24px;
+    border: 1px rgba(0, 0, 0, 0.30) dotted;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* File Drop Text */
+.file-drop-area div {
+    color: #787878;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.file-drop-area span {
+    color: black;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 500;
+}
+
+.file-drop-area span.underline {
+    text-decoration: underline;
+}
+
+/* Complaint Section */
+.complaint-section {
+    color: #0b0b0b;
+    width: 1352px;
+    height: 279px;
+    left: 80px;
+    top: 620px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Complaint Textarea 1352*/
+.complaint-textarea {
+    font-family: Montserrat;
+    color: #0b0b0b;
+    font-size: 15px;
+    width: 1343.5px;  
+    height: 249px;
+    padding: 20px 20px 209px 20px;
+    border-radius: 24px;
+    border: 1px rgba(0, 0, 0, 0.30) solid;
+}
+
+.dropdown-select
+{
+    display: flex;
+    width: 598px;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    background: #FFF;
+}
+.tba{
+    color: #0b0b0b;
+}
+.grey{
+    color: #787878;
+}
+.domNam{
+    display: flex;
+    width: 571px;
+    padding: 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
+    background: #FFF;
+    color: #787878;
+}
+.underline{
+    text-decoration: underline;
+}
+.complaint-section1
+{
+    font-size: 16px;
+}
