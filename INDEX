@@ -178,3 +178,71 @@ body {
     left: 969px;
 }
 
+//test INDEX NOT CONFIRMED
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="ds.css" />
+    
+</head>
+<body>
+    
+    <div class="container">
+        <img id="imageButton" src="images/image_2.png" />
+
+        <div class="nav-bar">
+            <div id="Loop" class="nav-item" onclick="showAlert()">Digital Services</div>
+            <div id = "raiseIssueButton0" class = "nav-item" >Raise an Issue</div>
+            <div class="nav-item">Chat</div>
+        </div>
+        <div class="divider"></div>
+        <div class="small-divider"></div>
+        <img style="max-height: 1500px; margin-top: 100px; width: 1512px;  display: flex" src="images/ai_conti.jpg" />
+        <div class="main-content">
+          <div class="title">Continental</div>
+          <div class="subtitle">Digital</div>
+          <div class="subtitle">Services</div>
+          <div class="border-box"></div>
+          <div id="raiseIssueButton" class="button">Raise an Issue</div>
+          <!--<img class="side-image" src="images/image_1.png" /> -->
+      </div>
+         <!-- JavaScript to handle button click -->
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Get the button element by its ID
+        var raiseIssueButton = document.getElementById('DS');
+        
+        // Define the function to be executed when the button is clicked
+        DS.addEventListener('click', function() {
+            // Add your functionality here, such as redirecting to a form or opening a modal
+            window.location.href = 'digitalServices.html'; // Example of redirecting to another page
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Get the button element by its ID
+        var raiseIssueButton = document.getElementById('raiseIssueButton');
+        
+        // Define the function to be executed when the button is clicked
+        raiseIssueButton.addEventListener('click', function() {
+            // Add your functionality here, such as redirecting to a form or opening a modal
+            window.location.href = 'raise_an_issue.html'; // Example of redirecting to another page
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Get the button element by its ID
+        var raiseIssueButton0 = document.getElementById('raiseIssueButton0');
+        
+        // Define the function to be executed when the button is clicked
+        raiseIssueButton0.addEventListener('click', function() {
+            // Add your functionality here, such as redirecting to a form or opening a modal
+            window.location.href = 'raise_an_issue.html'; // Example of redirecting to another page
+        });
+      });
+    </script>
+</body>
+</html>  
